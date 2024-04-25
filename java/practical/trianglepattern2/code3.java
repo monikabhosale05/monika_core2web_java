@@ -2,7 +2,7 @@ import java.io.*;
 class My{
         public static void main(String[] args)throws IOException{
                 BufferedReader br= new  BufferedReader(new InputStreamReader(System.in));
-                System.out.print("enter no of rows");
+                System.out.print("enter no of rows: ");
                 int row=Integer.parseInt(br.readLine());
 		int n=65;
                 for(int i=1;i<=row;i++){

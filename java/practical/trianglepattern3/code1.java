@@ -4,7 +4,12 @@ class Demo{
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enetr the no. of rows : ");
 		int row=sc.nextInt();
-	       int num=1;
-		for(int i=row;i>=1;i--){
-			for(int j=1;j<=i;j++){
-				
+		for(int i=1;i<=row;i++){
+			int num=i;
+			for(int j=row;j>=i;j--){
+				System.out.print(num++ + " ");
+			}
+			System.out.println("");
+		}
+	}
+}

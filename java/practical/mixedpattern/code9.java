@@ -4,16 +4,15 @@ class Lake{
                 Scanner sc=new Scanner(System.in);
                 System.out.println("enter no. of rows:");
                 int row=sc.nextInt();
-		int num=65;
+		int ch=64+row;
 		for(int i=row;i>=1;i--){
-			int num1=1;
+			int num=1;
 			for(int j=1;j<=i;j++){
-				int b=num+row-j;
-				if(i%2==1){
-					System.out.print((char)b-- + " ");
+				if(i%2==0){
+					System.out.print(num++ + " ");
 				}
 				else{
-					System.out.print(num1++ + " ");
+					System.out.print((char)ch-- + " ");
 				}
 			}
 			System.out.println("");

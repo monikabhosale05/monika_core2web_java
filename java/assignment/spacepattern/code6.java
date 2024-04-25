@@ -1,21 +1,17 @@
 import java.util.*;
-class Pattern{
+class Mon{
         public static void main(String[] args){
                 Scanner sc=new Scanner(System.in);
-                System.out.print("enter no. of rows:");
+                System.out.print("enter no.of rows:");
                 int row=sc.nextInt();
-                int num=row;
                 for(int i=1;i<=row;i++){
-                        for(int j=1;j<=row;j++){
-                                if(num%2==1){
-                                        System.out.print(num*num + " ");
-                                }
-                                else{
-                                        System.out.print(num + " ");
-                                }
-                                num++;
+                        for(int sp=1;sp<=row-i;sp++){
+                                System.out.print("\t");
                         }
-                        System.out.println("");
+                        for(int j=1;j<=i;j++){
+                                System.out.print(i*j + "\t");
+                        }
+                System.out.println("");
                 }
         }
 }

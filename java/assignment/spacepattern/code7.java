@@ -1,22 +1,16 @@
 import java.util.*;
-class Web{
+class New{
         public static void main(String[] args){
                 Scanner sc=new Scanner(System.in);
                 System.out.print("enter no. of rows:");
                 int row=sc.nextInt();
-                int num=row;
-                int ch='A';
-                for(int i=1;i<=row;i++){
-                        for(int j=1;j<=row;j++){
-                                if(num%2==1){
-                                        System.out.print((char)ch + " ");
-                                }
-                                else{
-                                        System.out.print(num + " ");
-                                }
-                                num++;
+                for(int i=row;i>=1;i--){
+                        for(int space=i;space<=row-1;space++){
+                                System.out.print("\t");
                         }
-			ch++;
+                        for(int j=1;j<=i;j++){
+                                System.out.print("*"+ "\t");
+                        }
                         System.out.println("");
                 }
         }

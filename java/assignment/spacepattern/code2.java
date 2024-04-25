@@ -1,24 +1,18 @@
 import java.util.*;
-class Core{
-	public static void main(String[] args){
-		Scanner sc=new Scanner(System.in);
-		System.out.print("enter no. of rows:");
-		int row=sc.nextInt();
-		int num=row;
-		for(int i=1;i<=row;i++){
-			for(int j=1;j<=row;j++){
-				if(j==1){
-					System.out.print(num*3 + " ");
-				}
-				else if(num%5==0){
-					System.out.print(num*5 + " ");
-				}
-				else{
-					System.out.print(num + " ");
-				}
-			        num++;
-			}
-			System.out.println("");
-		}
-	}
+class MyDemo{
+        public static void main(String[] args){
+                Scanner sc=new Scanner(System.in);
+                int row=sc.nextInt();
+                int space=1;
+                for(int i=1;i<=row;i++){
+                        for(space=1;space<=row-i;space++){
+                                System.out.print("  " );
+                        }
+                        int num=1;
+                        for(int j=1;j<=i;j++){
+                                System.out.print(num++ + " ");
+                        }
+                        System.out.println("");
+                }
+        }
 }

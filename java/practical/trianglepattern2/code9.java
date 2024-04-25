@@ -2,7 +2,7 @@ import java.io.*;
 class Yash{
         public static void main(String[] args)throws IOException{
                 BufferedReader b= new  BufferedReader(new InputStreamReader(System.in));
-                System.out.println("enter no of rows");
+                System.out.print("enter no of rows :");
                 int row=Integer.parseInt(b.readLine());
 		int n=row;
 		char ch='a';

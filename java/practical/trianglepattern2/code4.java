@@ -1,7 +1,7 @@
 import java.io.*;
-class Monika{                                                                                                                                              public static void main(String[] args)throws IOException{
+class Monika{                                                                                                                                               public static void main(String[] args)throws IOException{
                 BufferedReader br= new  BufferedReader(new InputStreamReader(System.in));
-                System.out.print("enter no of rows");
+                System.out.print("enter no of rows: ");
                 int row=Integer.parseInt(br.readLine());
 		int num1=65;
 		int num2=97;
